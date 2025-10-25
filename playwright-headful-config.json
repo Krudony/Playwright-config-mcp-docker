@@ -1,0 +1,19 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "launchOptions": {
+      "headless": false,
+      "args": ["--start-maximized", "--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage", "--disable-extensions", "--disable-background-timer-throttling", "--disable-backgrounding-occluded-windows", "--disable-renderer-backgrounding"],
+      "executablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+    },
+    "contextOptions": {
+      "viewport": { "width": 1920, "height": 1080 }
+    }
+  },
+  "capabilities": ["core", "vision", "pdf"],
+  "outputDir": "./browser-outputs",
+  "timeouts": {
+    "action": 10000,
+    "navigation": 60000
+  }
+}
