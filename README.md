@@ -56,6 +56,13 @@ Emergency solutions and comprehensive troubleshooting:
 - Advanced scenarios
 - Last resort methods
 
+### 🐛 [MCP Docker Windows Fix](./mcp-docker-windows-fix.md)
+แก้ไขปัญหา Claude ไม่สามารถเชื่อมต่อกับ MCP Docker Servers บน Windows:
+- วิเคราะห์สาเหตุรากของปัญหา
+- แก้ไขการกำหนดค่า Docker เฉพาะ Windows
+- สคริปต์ติดตั้งอัตโนมัติ
+- รองรับภาษาไทย
+
 ## ✅ Verification Checklist
 
 ### Pre-Flight:
@@ -94,10 +101,30 @@ Emergency solutions and comprehensive troubleshooting:
 - [Playwright Documentation](https://playwright.dev/)
 - [Chrome Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)
 - [GitHub Issue #1](https://github.com/Krudony/Playwright-config-mcp-docker/issues/1)
+- [GitHub Issue #2 - MCP Docker Windows Connectivity](https://github.com/Krudony/Playwright-config-mcp-docker/issues/2) ✅ **RESOLVED**
+
+## 📋 เครื่องมือที่มีให้ (Available Tools)
+
+### 🎭 Browser Automation (Headful Mode)
+- **สคริปต์**: `docker-setup-simple.ps1`, `install-playwright-final.ps1`
+- **คอนฟิก**: `playwright-headful-config.json`, `claude-desktop-config-playwright.json`
+- **ความสามารถ**: มองเห็นการทำงานของบราวเซอร์จริง, ถ่ายภาพ, ทดสอบอัตโนมัติ
+
+### 🐳 Docker Connectivity (Windows)
+- **สคริปต์**: `docker-setup-simple.ps1`
+- **คอนฟิก**: `claude-desktop-docker-config.json`
+- **แก้ไข**: ปัญหาการเชื่อมต่อ MCP Docker บน Windows
+- **สถานะ**: ✅ **แก้ไขแล้ว** - Issue #2
+
+### 📚 Documentation (Thai/English)
+- **คู่มือ**: `MCP-Configuration-Guide.md` (ภาษาไทย)
+- **แก้ไขปัญหา**: `mcp-docker-windows-fix.md`
+- **สรุป**: `SOLUTION-ISSUE-2.md`
 
 ## 🏷️ Labels
-`browser-automation` `playwright` `windows` `troubleshooting` `headful-mode`
+`browser-automation` `playwright` `windows` `troubleshooting` `headful-mode` `docker-connectivity` `thai-support`
 
 ---
 
-**💡 Pro Tip**: Use the issue template for systematic problem solving in other projects!
+**💡 Pro Tip**: ใช้เทมเพลตการแก้ปัญหาเพื่อการแก้ไขปัญหาเชิงระบบในโปรเจคอื่นๆ!
+**🎯 ความสำเร็จ**: แก้ไข Issue #2 สำเร็จแล้ว - Claude สามารถเชื่อมต่อกับ MCP Docker บน Windows ได้แล้ว!
